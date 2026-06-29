@@ -15,6 +15,7 @@
     "MixinAbstractSoundInstance",
     "ParticleEngineMixin",
     "BlockBehaviourMixin",
-    "ModuleOverwriteMixin"
+    "ModuleOverwriteMixin",
+    "FontMixin"
   ]
 }

@@ -27,6 +27,7 @@ import com.barefootbird.birdaddon.features.impl.m4.Tac
 import com.barefootbird.birdaddon.features.impl.m4.ThornStunTimer
 import com.barefootbird.birdaddon.features.impl.m4.Trajectories
 import com.barefootbird.birdaddon.features.impl.m4.Waypoints
+import com.barefootbird.birdaddon.features.impl.skyblock.NameChanger
 import com.barefootbird.birdaddon.utils.Islands
 import com.barefootbird.birdaddon.utils.M4Mobs
 import com.barefootbird.birdaddon.utils.M4State
@@ -74,7 +75,7 @@ object BirdAddon : ClientModInitializer {
         ModuleManager.registerModules(ModuleConfig("BirdAddon.json"),
             SpiritBear, Highlight, Waypoints, Timer, Logging, ThornStunTimer, OverkillDisplay,
             Titles, Replay, MobCounters, Decoy, Tac, HideMessages, ExtraStats, Sounds, RenderOptimizer, Trajectories,
-            RabbitCountdown
+            RabbitCountdown, NameChanger,
         )
     }
 }

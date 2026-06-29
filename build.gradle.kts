@@ -54,28 +54,12 @@ dependencies {
 }
 
 loom {
-    noIntermediateMappings()
-
     runConfigs.named("client") {
         isIdeConfigGenerated = true
-        vmArgs.addAll(
-            arrayOf(
-                "-Dmixin.debug.export=true",
-                "-Ddevauth.enabled=true",
-                "-Ddevauth.account=main",
-                "-XX:+AllowEnhancedClassRedefinition"
-            )
-        )
     }
 
     runConfigs.named("server") {
         isIdeConfigGenerated = false
-    }
-}
-
-afterEvaluate {
-    loom.runs.named("client") {
-        vmArg("-javaagent:${configurations.compileClasspath.get().find { it.name.contains("sponge-mixin") }}")
     }
 }
 
